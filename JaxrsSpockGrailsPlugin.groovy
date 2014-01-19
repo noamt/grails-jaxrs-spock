@@ -1,7 +1,7 @@
 class JaxrsSpockGrailsPlugin {
-    def version = "0.0.1-grails2.0-SNAPSHOT"
+    def version = "0.0.1-grails2.2-SNAPSHOT"
 
-    def grailsVersion = "2.0 > *"
+    def grailsVersion = "2.2 > *"
 
     def dependsOn = [:]
 

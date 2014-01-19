@@ -29,6 +29,9 @@ grails.project.dependency.resolution = {
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
+        compile("org.spockframework:spock-grails-support:0.7-groovy-2.0") {
+            export = false
+        }
     }
 
     plugins {
@@ -42,6 +45,7 @@ grails.project.dependency.resolution = {
         }
         compile(':spock:0.7') {
             export = false
+            exclude "spock-grails-support"
         }
     }
 }
