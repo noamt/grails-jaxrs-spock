@@ -4,6 +4,48 @@ Provides Spock specification support for the Grails JAX-RS plugin. +
 These specification classes were once included in the Grails JAX-RS plugin, but were migrated to this module in order to
 make the JAX-RS plugin more agnostic in terms of Grails/Groovy version compatibility.
 
+=== Which version of the plugin do I need?
+
+For different reasons (versions of Groovy, versions of Spock), the latest revisions of Grails require different versions of this plugin. +
+Each series is marked by a suffix describing the supported version of Grails: +
+
+[options="header"]
+|=======================
+|Supported Grails version|Required plugin version
+|2.1.x and below |+$VERSION+-grails2.0
+|2.2.x |+$VERSION+-grails2.2
+|2.3.x |+$VERSION+-grails2.3
+|=======================
+
+The lastest available versions are:
+
+* +0.0.1-grails2.0+
+* +0.0.1-grails2.2+
+* +0.0.1-grails2.3+
+
+=== How can I obtain the plugin?
+
+Because the plugin hasn't been accepted to Grails' plugin central, it can only be resolved in the meantime from the project's http://noams.artifactoryonline.com/noams/simple/grails-elasticsearch-plugin-rc/[Artifactory Online repository]. +
+Edit your project's +BuildConfig.groovy+ file, by first adding the plugin's repository declaration:
+
+----
+grails.project.dependency.resolution = {
+    repositories {
+        mavenRepo 'http://noams.artifactoryonline.com/noams/grails-jaxrs-plugin-rc'
+    }
+}
+----
+
+And then adding the plugin's dependency declaration:
+
+----
+grails.project.dependency.resolution = {
+    plugins {
+        compile ':jaxrs-spock:$VERSION'
+    }
+}
+----
+
 == License
 
 ----
