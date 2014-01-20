@@ -43,7 +43,7 @@ grails.project.dependency.resolution = {
             export = false
         }
 
-        compile(':jaxrs:0.9-SNAPSHOT') {
+        compile(':jaxrs:0.9') {
             export = false
         }
         compile(':spock:0.7') {
