@@ -25,7 +25,7 @@ The lastest available versions are:
 
 === How can I obtain the plugin?
 
-Because the plugin hasn't been accepted to Grails' plugin central, it can only be resolved in the meantime from the project's http://noams.artifactoryonline.com/noams/simple/grails-elasticsearch-plugin-rc/[Artifactory Online repository]. +
+Because the plugin hasn't been accepted to Grails' plugin central, it can only be resolved in the meantime from the project's http://noams.artifactoryonline.com/noams/simple/grails-jaxrs-plugin-rc/[Artifactory Online repository]. +
 Edit your project's +BuildConfig.groovy+ file, by first adding the plugin's repository declaration:
 
 ----
