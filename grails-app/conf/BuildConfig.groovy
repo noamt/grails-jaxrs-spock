@@ -6,6 +6,9 @@ grails.project.dependency.distribution = {
     remoteRepository(id: 'snapshots-repo', url: 'http://noams.artifactoryonline.com/noams/grails-jaxrs-plugin-snapshots') {
         authentication username: System.getProperty('DEPLOYER_USERNAME'), password: System.getProperty('DEPLOYER_PASSWORD')
     }
+    remoteRepository(id: 'rc-repo', url: 'http://noams.artifactoryonline.com/noams/grails-jaxrs-plugin-rc') {
+        authentication username: System.getProperty('DEPLOYER_USERNAME'), password: System.getProperty('DEPLOYER_PASSWORD')
+    }
 }
 
 grails.project.dependency.resolution = {
