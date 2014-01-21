@@ -14,7 +14,7 @@ Each series is marked by a suffix describing the supported version of Grails: +
 |Supported Grails version|Required plugin version
 |2.1.x and below |+$VERSION+-grails2.0
 |2.2.x |+$VERSION+-grails2.2
-|2.3.x |+$VERSION+-grails2.3
+|2.3.x |Bundled with the JAX-RS plugin
 |=======================
 
 The lastest available versions are:
