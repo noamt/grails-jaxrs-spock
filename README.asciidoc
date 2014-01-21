@@ -21,22 +21,10 @@ The lastest available versions are:
 
 * +0.0.1-grails2.0+
 * +0.0.1-grails2.2+
-* +0.0.1-grails2.3+
 
 === How can I obtain the plugin?
 
-Because the plugin hasn't been accepted to Grails' plugin central, it can only be resolved in the meantime from the project's http://noams.artifactoryonline.com/noams/simple/grails-jaxrs-plugin-rc/[Artifactory Online repository]. +
-Edit your project's +BuildConfig.groovy+ file, by first adding the plugin's repository declaration:
-
-----
-grails.project.dependency.resolution = {
-    repositories {
-        mavenRepo 'http://noams.artifactoryonline.com/noams/grails-jaxrs-plugin-rc'
-    }
-}
-----
-
-And then adding the plugin's dependency declaration:
+Edit your project's +BuildConfig.groovy+ file by adding the plugin's dependency declaration:
 
 ----
 grails.project.dependency.resolution = {
